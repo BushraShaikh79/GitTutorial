@@ -21,6 +21,7 @@
                                 <state key="normal" title="Git Tutorial"/>
                                 <connections>
                                     <action selector="gitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPj-YZ-Xde"/>
+                                    <segue destination="4la-QQ-Vbn" kind="show" id="UL8-kf-0kF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,6 +39,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3" y="66"/>
+        </scene>
+        <!--New Feature-->
+        <scene sceneID="VY7-gz-sVM">
+            <objects>
+                <viewController id="4la-QQ-Vbn" customClass="NewFeature" customModule="GitTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="726-Kb-IuC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wFv-S2-xhO">
+                                <rect key="frame" x="87" y="301" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="8kL-WF-f7j"/>
+                                    <constraint firstAttribute="width" constant="240" id="FoP-Y0-rCp"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sWX-1c-Bh2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wFv-S2-xhO" firstAttribute="centerY" secondItem="726-Kb-IuC" secondAttribute="centerY" id="0Ta-ol-Zlc"/>
+                            <constraint firstItem="wFv-S2-xhO" firstAttribute="centerX" secondItem="726-Kb-IuC" secondAttribute="centerX" id="JaD-Ts-Ikl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="v4z-1D-R2M"/>
+                    <connections>
+                        <outlet property="mapView" destination="wFv-S2-xhO" id="PKC-TX-eVP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7K4-aX-12Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="66"/>
         </scene>
     </scenes>
     <resources>
