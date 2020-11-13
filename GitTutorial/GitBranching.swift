@@ -145,3 +145,41 @@ import Foundation
 
 //MARK: - Note : when type command git commit
 /* type :wq enter*/
+
+//MARK: another case to push
+/*
+ Admins-iMac:GitTutorial Justmac$ git checkout main
+ M    GitTutorial.xcodeproj/project.pbxproj
+ A    GitTutorial/GitBranching.swift
+ D    GitTutorial/GitCommandsReference.swift
+ A    GitTutorial/GitIgnoreCommands.swift
+ Switched to branch 'main'
+ Your branch is up to date with 'origin/main'.
+ Admins-iMac:GitTutorial Justmac$ git pull
+ Already up to date.
+ Admins-iMac:GitTutorial Justmac$ git merge NewFeature
+ Already up to date.
+ Admins-iMac:GitTutorial Justmac$ git commit
+ Aborting commit due to empty commit message.
+ Admins-iMac:GitTutorial Justmac$ git commit -m "git merging commands"
+ [main f5c4d3b] git merging commands
+  2 files changed, 8 insertions(+)
+  create mode 100644 GitTutorial/GitBranching.swift
+  rename GitTutorial/{GitCommandsReference.swift => GitIgnoreCommands.swift} (100%)
+ Admins-iMac:GitTutorial Justmac$ git push
+ Enumerating objects: 6, done.
+ Counting objects: 100% (6/6), done.
+ Delta compression using up to 4 threads
+ Compressing objects: 100% (4/4), done.
+ Writing objects: 100% (4/4), 458 bytes | 458.00 KiB/s, done.
+ Total 4 (delta 2), reused 0 (delta 0)
+ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+ To https://github.com/BushraShaikh79/GitTutorial.git
+    2346ed5..f5c4d3b  main -> main
+ Admins-iMac:GitTutorial Justmac$
+ 
+ VERIFY CHANGES ON DASHBOARD IF NOT REPLICATING
+ your pointer is still on main and merged changes are available on XCODE but not replicating on Dashboard
+ 1) Goto source control
+ 2) Hit Commit with (Push to remote main) >> pull >> push and check the dashboard
+ */
