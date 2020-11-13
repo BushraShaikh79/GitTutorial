@@ -13,6 +13,7 @@ class GitCommandsReference: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //After deleting branch
         print("NewFeature")
     }
     
