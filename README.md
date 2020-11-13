@@ -1,3 +1,3 @@
 # GitTutorial
 
-https://www.appcoda.com/git-source-control-in-xcode/
+https://www.youtube.com/watch?v=UPkBC48NHnQ refered channel
