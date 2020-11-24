@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class GitCommandsReference: UIViewController {
+class GitIgnoreCommands: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
